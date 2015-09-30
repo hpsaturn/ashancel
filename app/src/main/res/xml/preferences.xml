@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <PreferenceCategory android:title="Rastreo" >
+        <ListPreference
+            android:id="@+id/pref_key_intervalo"
+            android:defaultValue="5"
+            android:entries="@array/intervalo"
+            android:entryValues="@array/intervalo_values"
+            android:summary="Elige el intervalo con el que se registrará en el servidor"
+            android:title="Intervalo en Seguimiento" />
+        <ListPreference
+            android:id="@+id/pref_key_intervalo_recordatorio"
+            android:defaultValue="2"
+            android:entries="@array/intervalo_recordatorio_text"
+            android:entryValues="@array/intervalo_recordatorio_values"
+            android:summary="Intervalo el cual se preguntará al usuario si se encuentra bien"
+            android:title="Intervalo Para Recordatorio" />
+
+        <EditTextPreference
+            android:id="@+id/pref_key_custom_msg"
+            android:defaultValue="Algo me ha pasado!"
+            android:summary="Mensaje que se enviará a tus contactos"
+            android:title="Mensaje Personalizado" />
+
+        <PreferenceScreen
+            android:id="@+id/pref_key_select_ong"
+            android:summary="Selecciona las ONG&apos;s para enviar Alerta"
+            android:title="Seleccionar ONG&apos;s" />
+        <PreferenceScreen
+            android:id="@+id/pref_contacts_key"
+            android:summary="Contactos a enviar alerta"
+            android:title="Seleccionar Contactos" />
+ 		<Preference
+            android:id="@+id/pref_pic"
+            android:title="Foto para el widget" />
+        
+        <RingtonePreference
+            android:id="@+id/pref_ringtone_pref"
+            android:defaultValue="content://settings/system/notification_sound"
+            android:ringtoneType="alarm|ringtone"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:summary="Selecciona el tono de la Alarma cuando se establezca la hora de fin de rastreo"
+            android:title="Selecciona Sonido de Alarma" />
+
+        <ListPreference
+            android:id="@+id/pref_panic_delay"
+            android:defaultValue="3"
+            android:entries="@array/intervalo_panic_sms"
+            android:entryValues="@array/intervalo_panic_sms_values"
+            android:summary="Intervalo para enviar la alerta por SMS en caso que no se detenga correctamente la Alarma de rastreo"
+            android:title="Intervalo para enviar los SMS" />
+
+        <Preference
+            android:id="@+id/pref_legal"
+            android:summary="Licencia GPL"
+            android:title="Avisos Legals" />
+        <Preference
+            android:id="@+id/pref_about"
+            android:title="Acerca de la Aplicación" />
+
+        <org.hansel.myAlert.Preferences.CerrarSesion
+            android:id="@+id/pref_key_logout"
+            android:summary="Al cerrar sesión se inhabilitará el botón de pánico"
+            android:title="Cerrar Sesión" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/separator"
+	    android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/numpad_background_top"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+        
+        <CheckBox
+            android:id="@+id/chooseFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"            
+            android:paddingLeft="3dp"
+            android:button="@drawable/checkbox"
+            android:visibility="visible" />
+        
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/chooseFriend"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/content_description_contact_picture"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:src="@drawable/unknown_small"/>
+            
+        
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/icon"
+            android:paddingLeft="5dp"
+            android:lines="2"
+            android:textColor="@color/text_contrast"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/contactId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text_contrast"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+    
+</LinearLayout>

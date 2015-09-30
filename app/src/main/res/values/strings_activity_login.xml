@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Correo</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in_register"><b>Iniciando Sesión</b> o registro</string>
+    <string name="action_sign_in_short">Ingresar</string>
+    <string name="menu_forgot_password">Recuperar contraseña</string>
+    <string name="login_progress_signing_in">Ingresando&#8230;</string>
+    <string name="error_invalid_email">Correo no válido</string>
+    <string name="error_invalid_password">La contraseña es muy corta</string>
+    <string name="error_incorrect_password">Contraseña incorrecta</string>
+    <string name="error_field_required">Ingrese tú usuario</string>
+    <string name="error_passw_required">Ingrese tú contraseña</string>
+    <string name="error_password_confirm">La contraseña no concuerda</string>
+    <string name="error_email_confirm">El correo no concuerda</string>
+    <string name="invalid_email">Correo no válido</string>
+    <string name="invalid_empty">Todos los campos son obligatorios</string>
+</resources>

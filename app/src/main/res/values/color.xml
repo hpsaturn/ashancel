@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_error">#e41915</color>
+    <color name="android_green">#669900</color>
+    <color name="blue_light">#ff33b5e5</color>
+    <color name="BlueICS">#33B5E5</color>
+    <color name="rojo_logo">#EF4147</color>
+    <color name="white">#FFffffff</color>
+    <color name="blue_hancel">#FF008186</color>
+    <color name="primary">#009688</color>
+    <color name="primary_dark">#ffa000</color>
+    <color name="accent">#ff6e40</color>
+    <color name="orange_hancel">#FFff7B1E</color>
+    <color name="background_app">#FFEFF5F8</color>
+  	<color name="background_header">#454d4d</color>
+    <color name="black">#ff000000</color>
+  	
+  	<color name="text_color">#454d4d</color> 
+  	<color name="tittle_color">#2C3131</color>   	
+        
+    <!-- Linphone values -->
+    <color name="main_app_color">#FF008186</color>    
+    <color name="text_selected">#ffcf4c29</color>
+    <color name="text_over">#ffb9c4cb</color>
+    <color name="text_default">#ff5b656f</color>
+    <color name="text_disabled">#ffa6b3bf</color>
+    <color name="text_header">#ff7e8e9e</color>
+    <color name="text_switch_selected">#ffffff</color>
+    <color name="text_switch">#ff41484f</color>    
+    <color name="text_button">#ff41484f</color>
+    <color name="text_button_disabled">#ffa6b3bf</color>
+    <color name="text_button_selected">#ff41484f</color>
+    <color name="text_button_over">#ffcf4c29</color>    
+    <color name="numpad_background_bottom">#ffe4edf2</color>
+    <color name="numpad_background_dialer">#ffd8d8d8</color>
+    <color name="numpad_background_top">#ffb1bdc3</color>    
+    <color name="missed_calls_background">#ffcf4c29</color>    
+    <color name="transparent">#00000000</color>    
+    <color name="landscape_background">#CCCCCC</color>    
+    <color name="text_contrast">#ff000000</color>
+    <!-- End Linphone values -->
+</resources>

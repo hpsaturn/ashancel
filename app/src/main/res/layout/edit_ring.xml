@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:linphone="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/contact_cancel"
+            android:contentDescription="@string/content_description_cancel"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:scaleType="centerCrop"
+            android:text="@string/button_cancel"
+            android:textColor="@drawable/text_button" />
+
+        <TextView
+            android:id="@+id/deleteRing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/contact_delete"
+            android:contentDescription="@string/content_description_cancel"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:scaleType="centerCrop"
+            android:text="@string/button_delete_ring"
+            android:textColor="@drawable/text_button"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/contact_ok"
+            android:contentDescription="@string/content_description_validate"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:scaleType="centerCrop"
+            android:text="@string/button_ok_ring"
+            android:textColor="@drawable/text_button" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:gravity="fill"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:rowCount="3">
+
+        <TextView
+            style="@style/labelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:cacheColorHint="#FFDAFF7F"
+            android:paddingRight="15dp"
+            android:text="@string/ring_name" />
+
+        <EditText
+            android:id="@+id/ringName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_fast_address_background"
+            android:gravity="left"
+            android:inputType="textPersonName|textCapWords"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/blue_hancel"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            style="@style/labelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:paddingRight="15dp"
+            android:text="@string/ring_always" />
+
+        <CheckBox
+            android:id="@+id/ringNotify"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/checkbox" />
+
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/searchContacts"
+            style="@style/button_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:contentDescription="@string/content_description_add_contact"
+            android:text="@string/ring_add_contacts" />
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/ringContactsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:clickable="true"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:fastScrollAlwaysVisible="true"
+            android:fastScrollEnabled="true" />
+
+        <TextView
+            android:id="@+id/noContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/no_contact"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@drawable/text_color"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

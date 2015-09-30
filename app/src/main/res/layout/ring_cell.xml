@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_selector"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    
+    
+    <TextView
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/numpad_background_top"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_contact_picture"
+            android:scaleType="centerInside"
+            android:src="@drawable/community" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/icon"
+            android:lines="1"
+            android:textSize="14sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text_contrast" />
+
+        <TextView
+            android:id="@+id/iconEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="110dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:text="idRing"
+            android:textSize="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_row" />
+
+        <TextView
+            android:id="@+id/iconDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:text="idRing"
+            android:textSize="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/delete_row_inner" />
+
+       <CheckBox
+            android:id="@+id/chooseRing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"            
+            android:paddingLeft="3dp"            
+            android:button="@drawable/checkbox"
+            android:visibility="visible" />
+       
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:linphone="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/container"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/background"
+	android:orientation="vertical"
+	android:gravity="center">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:fillViewport="true">
+
+		<LinearLayout
+			android:id="@+id/txtWelcome"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:gravity="center_vertical"
+			android:orientation="vertical">
+
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_centerVertical="true">
+
+				<TextView
+					android:id="@+id/userWelcome"
+					style="@style/registeredTittle"
+					android:text="@string/userWelcomeTitle"/>
+
+				<TextView
+					android:id="@+id/userWelcomeTxt"
+					style="@style/registeredTxt"
+					android:text="@string/registration_info"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_gravity="right"
+				android:padding="25dp">
+
+				<Button
+					android:id="@+id/newRing"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:background="@drawable/rings_add_ring"
+					android:gravity="center"
+					android:paddingTop="30dp"
+					android:textSize="18sp"
+					android:textColor="@drawable/text_button"
+					android:scaleType="centerCrop"
+					android:adjustViewBounds="true"
+					android:layout_weight="1"
+					android:text="@string/new_ring"/>
+
+				<Space
+					android:layout_width="match_parent"
+					android:layout_height="15dp" />
+
+				<TextView
+					android:id="@+id/later"
+					style="@style/linkText"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingTop="15dp"
+					android:text="@string/do_it_later" />
+
+				<!--Button
+					android:id="@+id/newContact"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:background="@drawable/contacts_add_contact"
+					android:gravity="center"
+					android:paddingTop="30dp"
+					android:paddingLeft="10dp"
+					android:paddingRight="10dp"
+					android:textSize="18sp"
+					android:textColor="@drawable/text_button"
+					android:scaleType="centerCrop"
+					android:adjustViewBounds="true"
+					android:layout_weight="1"
+					android:text="@string/registration_add_contact" />
+
+				<Space
+					android:layout_width="match_parent"
+					android:layout_height="15dp" /-->
+
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
