@@ -1,0 +1,9 @@
+image: bradrydzewski/android:r23
+env:
+script:
+  - ./gradlew test assemble -PdisablePreDex
+notify:
+  email:
+    recipients:
+      - hpsaturn@gmail.com
+
