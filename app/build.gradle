@@ -15,15 +15,14 @@ repositories {
     maven { url 'https://maven.fabric.io/public' }
 }
 
-
 android {
-    compileSdkVersion 22
+    compileSdkVersion 23
     buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "org.hansel.myAlert"
         minSdkVersion 14
-        targetSdkVersion 22
+        targetSdkVersion 23
     }
 
     buildTypes {
